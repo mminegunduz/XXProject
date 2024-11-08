@@ -1,0 +1,23 @@
+.parent {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    font-size:x-large;
+}
+  
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 280px;
+    right: 0;
+    z-index: 1;
+    height: 8%; /* Genişliği ayarlayın */
+    margin: 0 auto; /* Ortalamak için */
+    font-size: x-large;
+
+}
+
+.content {
+    margin-left: 280px;
+    padding-top: 56px; /* Navbar yüksekliği kadar boşluk bırakma */
+}

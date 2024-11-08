@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{%block content %}
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anasayfa</title>
+    <link rel="stylesheet" href="anasayfa.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Anasayfa</h1>
+
+        <!-- Gönderi Ekleme Alanı -->
+        <div class="post-create-container">
+            <div class="post-create">
+                <h3>Yeni Gönderi Ekle</h3>
+                <form id="create-post-form">
+                    <textarea id="post-text" placeholder="Bir şeyler yazın..." rows="4"></textarea>
+        
+                    <!-- Dosya Yükleme Alanı (Icon ile) -->
+                    <label for="post-image" class="file-label">
+                        <i class="fa-light fa-file-circle-plus"></i> Dosya Yükle
+                    </label>
+                    <input type="file" id="post-image" accept="image/*" style="display: none;">
+                    
+                    <button type="submit">Gönderi Paylaş</button>
+                </form>
+            </div>
+        </div>
+        <!-- Paylaşım 1 -->
+        <div class="post">
+            <div class="user-info">
+                <div class="profile-image">
+                    <img src="ahmet.png" alt="Profil Fotoğrafı">
+                </div>
+                <div class="username">Ahmet Yılmaz</div>
+            </div>
+            <div class="post-content">
+                <p>Bugün çok güzel bir gün, kahvemi içiyorum ve kod yazıyorum! ☕️💻</p>
+                <div class="post-image">
+                    <img src="setup.jpg" alt="Paylaşım Görseli">
+                </div>
+            </div>
+            <div class="post-time" id="post-time-1"></div>
+        </div>
+
+        <!-- Paylaşım 2 -->
+        <div class="post">
+            <div class="user-info">
+                <div class="profile-image">
+                    <img src="mehmet.jpg"Profil Fotoğrafı">
+                </div>
+                <div class="username">Mehmet Demir</div>
+            </div>
+            <div class="post-content">
+                <p>Yeni proje üzerinde çalışıyorum, çok heyecanlıyım! 🚀</p>
+            </div>
+            <div class="post-time" id="post-time-2"></div>
+        </div>
+
+        <!-- Paylaşım 3 -->
+        <div class="post">
+            <div class="user-info">
+                <div class="profile-image">
+                    <img src="ayşe.jpg" alt="Profil Fotoğrafı">
+                </div>
+                <div class="username">Ayşe Kara</div>
+            </div>
+            <div class="post-content">
+                <p>Güzel bir kitap okudum bugün, mutlaka tavsiye ederim! 📚</p>
+            </div>
+            <div class="post-time" id="post-time-3"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+{%endblock%}
